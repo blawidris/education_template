@@ -998,6 +998,36 @@ header{
     }
 }
 
+
+/* ================== Courses ================== */
+.main-header .section_header{
+    margin-top: 50px;
+}
+
+.main-header .course-category > .form-group{
+    display: inline-block;
+    margin-right: 20px;
+    width: calc(100%/5 + 20px);
+    padding: 10px 0;
+}
+.form-group > *{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-group label{
+    font-size: 20px;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+.form-group select{
+    padding: 10px;
+    border: var(--border);
+}
+.form-group select[option]{
+    color: #002147;
+}
 /* ================== Footer ================== */
 
 .main-footer{
