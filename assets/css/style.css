@@ -1,6 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;700&display=swap');
 
 /* root */
 :root{
@@ -17,7 +17,7 @@
     --font-size-medium:2.5rem;
     --font-size-large:3rem;
     --font-family: 'Inter', sans-serif;
-    --font-family-secondary:  'Sorts Mill Goudy', serif;
+    --font-family-secondary:  'Enriqueta', serif;
     --font-color:#757575;
 
     --border: 1px solid var(--gray);
@@ -176,6 +176,7 @@ ul{
 .card{
     border-radius: 12px;
     border: var(--border);
+    background-color: var(--white);
 }
 .card-img{
     width: 100%;
@@ -574,7 +575,7 @@ header{
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
     width: 100%;
-    min-height: 150px;
+    max-height: 200px;
     overflow: hidden;
 }
 .course-img > img{
@@ -697,14 +698,24 @@ header{
     width: 70px;
     height: 70px;
     margin-right: -20px;
-    z-index: 1;
+    /* z-index: 1; */
+}
+
+.h--6{
+    height: 80vh;
+}
+
+.mt--45{
+    margin-top: -15rem;
+    z-index: 10;
+    position: relative;
 }
  
 .feedback .feedback-content .text{
     background-color: var(--light-blue);
     padding: 20px 20px 20px 30px;
     position: relative;
-    /* z-index: -1; */
+    z-index: -1;
     width: 90%;
 }
 
@@ -1006,8 +1017,8 @@ header{
 
 .main-header .course-category > .form-group{
     display: inline-block;
-    margin-right: 20px;
-    width: calc(100%/5 + 20px);
+    margin-right: 10px;
+    width: calc(100%/5 + 35px);
     padding: 10px 0;
 }
 .form-group > *{
@@ -1024,10 +1035,9 @@ header{
 .form-group select{
     padding: 10px;
     border: var(--border);
+    outline: none;
 }
-.form-group select[option]{
-    color: #002147;
-}
+
 /* ================== Footer ================== */
 
 .main-footer{
